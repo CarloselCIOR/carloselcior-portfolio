@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import ButtonSocial from "../components/ButtonSocial.astro";
 import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
 import GitHubIcon from "../components/icons/GitHubIcon.astro";
 import GmailIcon from "../components/icons/GmailIcon.astro";
@@ -35,7 +37,7 @@ import PostmanIcon from "../components/icons/PostmanIcon.astro";
 	description="Portfolio de Carloselcior. Desarrollador Web y Multiplataforma, Estudiante de Ingeniería en Sistemas Computacionales"
 >
 	<main>
-		<section class="w-full mx-auto lg:w-[1024px] py-44">
+		<SectionContainer id="Sobre-Mi" class="py-44 pb-22">
 			<img
 				class="rounded-full size-16 mb-4"
 				src="https://avatars.githubusercontent.com/u/32882289?v=4"
@@ -59,157 +61,138 @@ import PostmanIcon from "../components/icons/PostmanIcon.astro";
 			</h2>
 
 			<ul class="flex gap-x-10">
-				<li class="hover:scale-110 transition">
-					<a
-						href="https://www.linkedin.com/in/carlos-ismael-orozco-rios/"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="flex flex-col items-center"
-					>
-						<LinkedInIcon class="size-8" />LinkedIn
-					</a>
-				</li>
-				<li class="hover:scale-110 transition">
-					<a
-						href="https://github.com/CarloselCIOR/"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="flex flex-col items-center"
-					>
-						<GitHubIcon class="size-8" />GitHub
-					</a>
-				</li>
-				<li class="hover:scale-110 transition">
-					<a
-						href="mailto:carloselcior@gmail.com"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="flex flex-col items-center"
-					>
-						<GmailIcon class="size-8" />Correo
-					</a>
-				</li>
-			</ul>
+				<ButtonSocial  href="https://www.linkedin.com/in/carlos-ismael-orozco-rios/">
+					<LinkedInIcon class="size-8" />LinkedIn
+				</ButtonSocial>
 
-			<div class="mt-96">
-				<div class="m-10 font-bold text-2xl">
-					<h3>Tecnologías:</h3>
-				</div>
-	
-				<div class="mt-10 mb-20">
-					<hr />
-					<h4 class="m-2 font-bold text-lg text-blue-300">Front-End</h4>
-					<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
-						<Pill href="https://developer.mozilla.org/es/docs/Web/HTML">
-							<HtmlIcon class="size-4" /> HTML
-						</Pill>
-						<Pill href="https://developer.mozilla.org/es/docs/Web/CSS">
-							<CssIcon class="size-4" /> CSS
-						</Pill>
-						<Pill
-							href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-						>
-							<JavascriptIcon class="size-4" /> Javascript
-						</Pill>
-						<Pill href="https://angular.io/">
-							<AngularIcon class="size-4" /> Angular
-						</Pill>
-						<Pill href="https://astro.build/">
-							<AstroIcon class="size-4" /> Astro
-						</Pill>
-						<Pill href="https://tailwindcss.com/">
-							<TailwindIcon class="size-4" /> Tailwind
-						</Pill>
-						<Pill href="https://getbootstrap.com/">
-							<BootstrapIcon class="size-4" /> Bootstrap
-						</Pill>
-						<Pill href="https://flutter.dev/">
-							<FlutterIcon class="size-4" /> Flutter
-						</Pill>
-					</nav>
-				</div>
-	
-				<div class="mt-20 mb-20">
-					<hr />
-					<h4 class="m-2 font-bold text-lg text-red-300">Back-End</h4>
-					<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
-						<Pill href="https://nodejs.org/en">
-							<NodeJsIcon class="size-4" /> Node.js
-						</Pill>
-						<Pill href="https://expressjs.com/">
-							<ExpressJsIcon class="size-4" /> Express.js
-						</Pill>
-						<Pill href="https://www.mongodb.com/es">
-							<MongoDBIcon class="size-4" /> MongoDB
-						</Pill>
-						<Pill href="https://www.microsoft.com/en-us/sql-server/">
-							<SQLServerIcon class="size-4" /> SQL Server
-						</Pill>
-						<Pill href="https://firebase.google.com/">
-							<FirebaseIcon class="size-4" /> Firebase
-						</Pill>
-						<Pill href="https://www.php.net/">
-							<PhpIcon class="size-4" /> PHP
-						</Pill>
-						<Pill href="https://www.postgresql.org/">
-							<PostgreSQLIcon class="size-4" /> PostgreSQL
-						</Pill>
-					</nav>
-				</div>
-	
-				<div class="mt-20 mb-20">
-					<hr />
-					<h4 class="m-2 font-bold text-lg text-green-300">
-						Lenguajes de Programación
-					</h4>
-					<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
-						<Pill
-							href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-						>
-							<JavascriptIcon class="size-4" /> JavaScript
-						</Pill>
-						<Pill href="https://expressjs.com/">
-							<JavaIcon class="size-4" /> Java
-						</Pill>
-						<Pill href="https://dart.dev/">
-							<DartIcon class="size-4" /> Dart
-						</Pill>
-						<Pill href="https://www.typescriptlang.org/">
-							<TypeScriptIcon class="size-4" /> TypeScript
-						</Pill>
-						<Pill href="https://www.php.net/">
-							<PhpIcon class="size-4" /> PHP
-						</Pill>
-					</nav>
-				</div>
-	
-				<div class="mt-20 mb-20">
-					<hr />
-					<h4 class="m-2 font-bold text-lg text-violet-400">
-						Otras Tecnologías
-					</h4>
-					<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
-						<Pill href="https://www.figma.com/">
-							<FigmaIcon class="size-4" /> Figma
-						</Pill>
-						<Pill href="https://helpx.adobe.com/xd/get-started.html">
-							<AdobeXDIcon class="size-4" /> Adobe XD
-						</Pill>
-						<Pill href="https://git-scm.com//">
-							<GitIcon class="size-4" /> Git
-						</Pill>
-						<Pill href="https://github.com/">
-							<GitHubIcon class="size-4" /> GitHub
-						</Pill>
-						<Pill href="https://www.php.net/">
-							<JiraIcon class="size-4" /> Jira
-						</Pill>
-						<Pill href="https://www.postman.com/">
-							<PostmanIcon class="size-4" /> Postman
-						</Pill>
-					</nav>
-				</div>
+				<ButtonSocial  href="https://github.com/CarloselCIOR/">
+					<GitHubIcon class="size-8" />GitHub
+				</ButtonSocial>
+
+				<ButtonSocial  href="mailto:carloselcior@gmail.com">
+					<GmailIcon class="size-8" />Correo
+				</ButtonSocial>
+			</ul>
+		</SectionContainer>
+
+		<SectionContainer  id="Tecnologias">
+			<div class="m-10 font-bold text-2xl">
+				<h3>Tecnologías:</h3>
 			</div>
-		</section>
+
+			<div class="mt-10 mb-20">
+				<hr />
+				<h4 class="m-2 font-bold text-lg text-blue-300">Front-End</h4>
+				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
+					<Pill href="https://developer.mozilla.org/es/docs/Web/HTML">
+						<HtmlIcon class="size-4" /> HTML
+					</Pill>
+					<Pill href="https://developer.mozilla.org/es/docs/Web/CSS">
+						<CssIcon class="size-4" /> CSS
+					</Pill>
+					<Pill
+						href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+					>
+						<JavascriptIcon class="size-4" /> Javascript
+					</Pill>
+					<Pill href="https://angular.io/">
+						<AngularIcon class="size-4" /> Angular
+					</Pill>
+					<Pill href="https://astro.build/">
+						<AstroIcon class="size-4" /> Astro
+					</Pill>
+					<Pill href="https://tailwindcss.com/">
+						<TailwindIcon class="size-4" /> Tailwind
+					</Pill>
+					<Pill href="https://getbootstrap.com/">
+						<BootstrapIcon class="size-4" /> Bootstrap
+					</Pill>
+					<Pill href="https://flutter.dev/">
+						<FlutterIcon class="size-4" /> Flutter
+					</Pill>
+				</nav>
+			</div>
+
+			<div class="mt-20 mb-20">
+				<hr />
+				<h4 class="m-2 font-bold text-lg text-red-300">Back-End</h4>
+				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
+					<Pill href="https://nodejs.org/en">
+						<NodeJsIcon class="size-4" /> Node.js
+					</Pill>
+					<Pill href="https://expressjs.com/">
+						<ExpressJsIcon class="size-4" /> Express.js
+					</Pill>
+					<Pill href="https://www.mongodb.com/es">
+						<MongoDBIcon class="size-4" /> MongoDB
+					</Pill>
+					<Pill href="https://www.microsoft.com/en-us/sql-server/">
+						<SQLServerIcon class="size-4" /> SQL Server
+					</Pill>
+					<Pill href="https://firebase.google.com/">
+						<FirebaseIcon class="size-4" /> Firebase
+					</Pill>
+					<Pill href="https://www.php.net/">
+						<PhpIcon class="size-4" /> PHP
+					</Pill>
+					<Pill href="https://www.postgresql.org/">
+						<PostgreSQLIcon class="size-4" /> PostgreSQL
+					</Pill>
+				</nav>
+			</div>
+
+			<div class="mt-20 mb-20">
+				<hr />
+				<h4 class="m-2 font-bold text-lg text-green-300">
+					Lenguajes de Programación
+				</h4>
+				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
+					<Pill
+						href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+					>
+						<JavascriptIcon class="size-4" /> JavaScript
+					</Pill>
+					<Pill href="https://expressjs.com/">
+						<JavaIcon class="size-4" /> Java
+					</Pill>
+					<Pill href="https://dart.dev/">
+						<DartIcon class="size-4" /> Dart
+					</Pill>
+					<Pill href="https://www.typescriptlang.org/">
+						<TypeScriptIcon class="size-4" /> TypeScript
+					</Pill>
+					<Pill href="https://www.php.net/">
+						<PhpIcon class="size-4" /> PHP
+					</Pill>
+				</nav>
+			</div>
+
+			<div class="mt-20 mb-20">
+				<hr />
+				<h4 class="m-2 font-bold text-lg text-violet-400">
+					Otras Tecnologías
+				</h4>
+				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
+					<Pill href="https://www.figma.com/">
+						<FigmaIcon class="size-4" /> Figma
+					</Pill>
+					<Pill href="https://helpx.adobe.com/xd/get-started.html">
+						<AdobeXDIcon class="size-4" /> Adobe XD
+					</Pill>
+					<Pill href="https://git-scm.com//">
+						<GitIcon class="size-4" /> Git
+					</Pill>
+					<Pill href="https://github.com/">
+						<GitHubIcon class="size-4" /> GitHub
+					</Pill>
+					<Pill href="https://www.php.net/">
+						<JiraIcon class="size-4" /> Jira
+					</Pill>
+					<Pill href="https://www.postman.com/">
+						<PostmanIcon class="size-4" /> Postman
+					</Pill>
+				</nav>
+			</div>
+		</SectionContainer>
 	</main>
 </Layout>
