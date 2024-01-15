@@ -36,15 +36,14 @@ import PostmanIcon from "../components/icons/PostmanIcon.astro";
 	title="Carloselcior - Desarrollador Web"
 	description="Portfolio de Carloselcior. Desarrollador Web y Multiplataforma, Estudiante de Ingeniería en Sistemas Computacionales"
 >
-	<main>
-		<SectionContainer id="Sobre-Mi" class="py-44 pb-22">
+	<main class="place-content-center md:items-center">
+		<SectionContainer id="Sobre-Mi" class="py-44 mx-5 sm:mx-auto">
 			<img
-				class="rounded-full size-16 mb-4"
+				class="rounded-full size-32 sm:size-40 mb-4 "
 				src="https://avatars.githubusercontent.com/u/32882289?v=4"
 				alt="carloselcior"
 			/>
-
-			<h1 class="text-5xl font-bold flex flex-row gap-x-4 -10">
+			<h1 class="text-xl md:text-3xl lg:text-4xl font-bold flex flex-wrap  gap-x-4 gap-y-4 pb-10">
 				Hola, soy Carloselcior
 				<a
 					class="flex justify-center items-center"
@@ -55,35 +54,35 @@ import PostmanIcon from "../components/icons/PostmanIcon.astro";
 					<Badge>#OpenToWork</Badge>
 				</a>
 			</h1>
-			<h2 class="text-xl opacity-70 my-6">
+			<h2 class="text-md lg:text-xl text-neutral-400 text-wrap max-w-[700px] ">
 				Estudiante de Ingenieria en Sistemas Computacionales. Enfocado
-				en desarrollo web
+				en desarrollo web Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa eveniet porro sequi a temporibus, nesciunt assumenda veniam minus, facere delectus. Ratione temporibus autem harum nobis nesciunt quaerat quibusdam vel.
 			</h2>
 
-			<ul class="flex gap-x-10">
+			<ul class="flex gap-x-10 my-10 text-xs md:text-base lg:text-lg">
 				<ButtonSocial  href="https://www.linkedin.com/in/carlos-ismael-orozco-rios/">
-					<LinkedInIcon class="size-8" />LinkedIn
+					<LinkedInIcon class="size-6 lg:size-8" />LinkedIn
 				</ButtonSocial>
 
 				<ButtonSocial  href="https://github.com/CarloselCIOR/">
-					<GitHubIcon class="size-8" />GitHub
+					<GitHubIcon class="size-6 lg:size-8" />GitHub
 				</ButtonSocial>
 
 				<ButtonSocial  href="mailto:carloselcior@gmail.com">
-					<GmailIcon class="size-8" />Correo
+					<GmailIcon class="size-6 lg:size-8" />Correo
 				</ButtonSocial>
 			</ul>
 		</SectionContainer>
 
 		<SectionContainer  id="Tecnologias">
-			<div class="m-10 font-bold text-2xl">
+			<div class="m-10 font-bold text-xl md:text-2xl lg:text-3xl">
 				<h3>Tecnologías:</h3>
 			</div>
 
 			<div class="mt-10 mb-20">
 				<hr />
-				<h4 class="m-2 font-bold text-lg text-blue-300">Front-End</h4>
-				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
+				<h4 class="m-2 font-bold text-blue-300 text-md md:text-lg lg:text-2xl">Front-End</h4>
+				<nav class="flex flex-wrap gap-4 gap-y-4 justify-center">
 					<Pill href="https://developer.mozilla.org/es/docs/Web/HTML">
 						<HtmlIcon class="size-4" /> HTML
 					</Pill>
@@ -115,7 +114,7 @@ import PostmanIcon from "../components/icons/PostmanIcon.astro";
 
 			<div class="mt-20 mb-20">
 				<hr />
-				<h4 class="m-2 font-bold text-lg text-red-300">Back-End</h4>
+				<h4 class="m-2 font-bold  text-md md:text-lg lg:text-2xl text-red-300">Back-End</h4>
 				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
 					<Pill href="https://nodejs.org/en">
 						<NodeJsIcon class="size-4" /> Node.js
@@ -143,7 +142,7 @@ import PostmanIcon from "../components/icons/PostmanIcon.astro";
 
 			<div class="mt-20 mb-20">
 				<hr />
-				<h4 class="m-2 font-bold text-lg text-green-300">
+				<h4 class="m-2 font-bold  text-md md:text-lg lg:text-2xl text-green-300">
 					Lenguajes de Programación
 				</h4>
 				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
@@ -169,7 +168,7 @@ import PostmanIcon from "../components/icons/PostmanIcon.astro";
 
 			<div class="mt-20 mb-20">
 				<hr />
-				<h4 class="m-2 font-bold text-lg text-violet-400">
+				<h4 class="m-2 font-bold  text-md md:text-lg lg:text-2xl text-violet-400">
 					Otras Tecnologías
 				</h4>
 				<nav class="flex flex-wrap gap-x-4 gap-y-4 justify-center">
