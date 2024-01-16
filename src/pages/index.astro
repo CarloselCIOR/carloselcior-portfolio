@@ -39,8 +39,9 @@ import Experience from "../components/Experience.astro";
 	description="Portfolio de Carloselcior. Desarrollador Web y Multiplataforma, Estudiante de Ingeniería en Sistemas Computacionales"
 >
 	<main class="place-content-center md:items-center">
-		<SectionContainer id="Inicio" class="py-44 mx-5 sm:mx-auto">
-			<img
+		<SectionContainer id="Inicio" class="mx-5 sm:mx-auto">
+			<div class="py-20">
+				<img
 				class="rounded-full size-32 sm:size-40 mb-4"
 				src="https://avatars.githubusercontent.com/u/32882289?v=4"
 				alt="carloselcior"
@@ -83,13 +84,17 @@ import Experience from "../components/Experience.astro";
 					<GmailIcon class="size-6 lg:size-8" />Correo
 				</ButtonSocial>
 			</ul>
+			</div>
 		</SectionContainer>
 
 		<SectionContainer id="Proyectos">
-			<Slider />
+			<Slider/>
 		</SectionContainer>
 
 		<SectionContainer id="Experiencia">
+			<div class="m-10 font-bold text-lg md:text-xl lg:text-2xl ">
+				<h3>Experiencia:</h3>
+			</div>
 			<Experience />
 		</SectionContainer>
 
