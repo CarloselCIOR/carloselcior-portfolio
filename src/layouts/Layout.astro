@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 
+
 interface Props {
 	title: string,
 	description: string;
@@ -19,8 +20,8 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	
-	<body class="w-full bg-gradient-to-t from-gray-800 via-gray-900 to-black transition">		
+	<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+	<body class="w-full bg-gradient-to-t from-gray-100 via-gray-200 to-white  dark:bg-gradient-to-t dark:from-gray-800 dark:via-gray-900 dark:to-black transition">		
 		<Header />
 		<slot />
 	</body>
