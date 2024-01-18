@@ -6,12 +6,15 @@
             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
             <div>
-                <p class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <p
+                    class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                >
                     <b class="text-rose-600">Port</b>folio
                 </p>
             </div>
 
             <button
+                id="toggleMenuButton"
                 data-collapse-toggle="navbar-default"
                 type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -66,9 +69,30 @@
                             >Tecnologias</a
                         >
                     </li>
-                    
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var navbarDefault = document.getElementById("navbar-default");
+
+        if (toggleMenuButton && navbarDefault) {
+            toggleMenuButton.addEventListener("click", function () {
+                // Cierra el menú después de hacer clic en un enlace
+                navbarDefault.classList.toggle("hidden");
+            });
+
+            // Cierra el menú al hacer clic en un enlace dentro del menú
+            var menuLinks = navbarDefault.querySelectorAll("a");
+            menuLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navbarDefault.classList.add("hidden");
+                });
+            });
+        }
+    });
+</script>
