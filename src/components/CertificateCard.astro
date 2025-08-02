@@ -2,8 +2,8 @@
 const { title, issuer, icon, url } = Astro.props;
 ---
 
-<a href={url} target="_blank" rel="noopener noreferrer" class="block p-4 border rounded-lg shadow hover:shadow-lg transition">
-  <div class="flex items-center gap-4">
+<a href={url} target="_blank" rel="noopener noreferrer" class="block p-4 border rounded-lg shadow hover:shadow-lg transition hover:bg-white/10">
+  <div class="flex items-center gap-4 ">
     <img src={icon} alt={issuer} class="w-12 h-12 object-contain" />
     <div>
       <h4 class="font-bold text-lg">{title}</h4>
